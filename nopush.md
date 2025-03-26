@@ -109,6 +109,10 @@ ul li:before {
     &nbsp;&nbsp;&nbsp;
     <a href="https://www.linkedin.com/in/jerryli2025/">Jerry Li</a>
     &nbsp;&nbsp;&nbsp;
+    <a href="https://morrishohoho.github.io">Ruoshen Mo</a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/jyue86/">Justin Yue</a>
+    &nbsp;&nbsp;&nbsp;
     <a href="https://hangqiu.github.io/">Hang Qiu</a>
    </h2></font>
 
@@ -126,10 +130,9 @@ ul li:before {
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 <!-- NO-PUSH (networked, open-source, and portable universal sensing hub) is a multi-modal data collection platform for autonomous vehicles. Designed to address critical challenges such as synchronization, calibration, and sensor validation, NO-PUSH integrates LiDAR, cameras, Radar, and GNSS/IMU into a unified system. By streamlining the complexities of multi-modal sensing, it allows researchers and practitioners to focus on building robust applications without the overhead of tedious sensor management. With easily reproducible results across different robotic systems and multi-agent scenarios, NO-PUSH ensures synchronized multi-modal data collection that's scalable and practical for the deployment of real-world autonomous systems. -->
-CMS, an open-source, cooperative multi-modal sensing
-platform. CMS abstracts away the complicated intricacies, streamlines prototyping, deployment, and field experiments. Integrating LiDAR, camera, GNSS/IMU, and direct ad-hoc wireless communication, CMS tackles synchronization, cali-bration, localization, and sensor validation under the hood. Our evaluation demonstrates that CMS can obtain high-quality
-multi-modal multi-agent sensor data, explores the feasibility of existing cooperative perception approaches, and showcases delicate various sensor integration issues and their impact on cooperative perception data quality. CMS will be open-sourced,
-easily reproducible for different robots and multi-agent research.
+CMS, is a open-source, cooperative multi-modal sensing
+platform. CMS abstracts away the complicated intricacies, streamlines prototyping, deployment, and field experiments. Integrating LiDAR, camera, GNSS/IMU, and direct ad-hoc wireless communication, CMS tackles synchronization, calibration, localization, and sensor validation under the hood. Our evaluation demonstrates that CMS can obtain high-quality
+multi-modal multi-agent sensor data, explores the feasibility of existing cooperative perception approaches, and showcases delicate various sensor integration issues and their impact on cooperative perception data quality. CMS is open sources and can be used as the base platform for different multi-agent and robotic research. 
 </left></td></tr></tbody></table>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
@@ -162,6 +165,70 @@ downstream multi-modal ML pipelines.
 </td></tr>
 </tbody>
 </table>
+
+
+
+<tr>
+  <td align="center">
+  <h1 align="center">Evaluations</h1>
+    <p>
+      We evaluate CMS across these important areas for a multi-agent platform: Synchronization, Calibration, Communication, and Localization.
+    </p>
+  </td>
+</tr>
+
+
+<table border="0" cellspacing="10" cellpadding="0" align="center"> 
+<tbody><tr><td>
+<!-- Container for the image gallery -->
+<div class="container" align="center">
+
+  <!-- Thumbnail images -->
+  <div class="row" style="width:1020">
+    <div class="column">
+      <img class="demo cursor" src="media/synchronization.png" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="media/calibration.png" style="width:100%" onclick="currentSlide(2)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="media/communication.png" style="width:100%" onclick="currentSlide(3)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="media/localization.png" style="width:100%" onclick="currentSlide(4)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+    </div>
+  </div>
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="./media/calibration_fig.png" width="1020" alt="Calibration Figure">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="./media/calibration_fig.png" width="1020" alt="Calibration Figure">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="./media/calibration_fig.png" width="1020" alt="Calibration Figure">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container" style="width:1020">
+    <p id="caption"></p>
+  </div>
+
+</div>
+<script>showSlides(1)</script>
+</td></tr></tbody>
+</table>
+
+
 
 
 <tr>
