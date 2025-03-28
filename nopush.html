@@ -126,7 +126,7 @@ ul li:before {
 
 
 <p></p>
-<div width="1000"><p>
+<div width="1000" justify-content: center; style="max-width: 800px; width: 100%;"><p>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 <!-- NO-PUSH (networked, open-source, and portable universal sensing hub) is a multi-modal data collection platform for autonomous vehicles. Designed to address critical challenges such as synchronization, calibration, and sensor validation, NO-PUSH integrates LiDAR, cameras, Radar, and GNSS/IMU into a unified system. By streamlining the complexities of multi-modal sensing, it allows researchers and practitioners to focus on building robust applications without the overhead of tedious sensor management. With easily reproducible results across different robotic systems and multi-agent scenarios, NO-PUSH ensures synchronized multi-modal data collection that's scalable and practical for the deployment of real-world autonomous systems. -->
@@ -137,8 +137,10 @@ multi-modal multi-agent sensor data, explores the feasibility of existing cooper
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td align="center">
-<img src="./media/nopush_intro.png" alt="NOPUSH Intro">
-</td></tr>
+    <img src="./media/tower.jpeg" 
+         alt="NOPUSH Intro" 
+         style="width: 800px; height: auto; float: none; display: block; margin: 0 auto;">
+  </td></tr>
 </tbody>
 </table>
 
@@ -147,7 +149,10 @@ multi-modal multi-agent sensor data, explores the feasibility of existing cooper
 <div style="display: flex; justify-content: center; width: 100%;">
   <div style="max-width: 800px; width: 100%;">
     <p style="text-align: left;">
-      CMS integrates LiDAR, Camera, GNSS with a power-over-ethernet (PoE) switch, which forwards the data to a central ROS node (running on a laptop). The laptop and sensors are synchronized with GNSS time, and all intrinsic and extrinsic parameters are calibrated for all sensors. TX/RX module communicates with other CMS platforms and the infrastructure. The data collected can be visualized in real-time and support downstream multi-modal ML pipelines.
+      CMS integrates LiDAR, Camera, GNSS with a power-over-ethernet (PoE) switch, which forwards the data to a central ROS node (running on a laptop). 
+      The laptop and sensors are synchronized with GNSS time, and all intrinsic and extrinsic parameters are calibrated for all sensors. 
+      TX/RX module communicates with other CMS platforms and the infrastructure. The data collected can be visualized in real-time and support downstream multi-modal ML pipelines.
+      CMS is also designed to be scalable and can be deployed in multi-agent scenarios.
     </p>
     <div style="display: flex; justify-content: center;">
       <img src="./media/arch4-1.png" alt="CMS Architecture" style="max-width: 100%; height: auto;">
@@ -156,76 +161,93 @@ multi-modal multi-agent sensor data, explores the feasibility of existing cooper
 </div>
 
 
+
 <!-- Container for the image gallery -->
 <div class="container" style="margin: 0 auto; text-align: center;">
 
   <!-- Title (centered) -->
   <h1 align="center">Evaluations</h1>
   <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-    <p>We evaluate CMS across these important areas for a multi-agent platform: Synchronization, Calibration, Communication, and Localization.</p>
+    <p>
+      We evaluate CMS across areas of synchronization, calibration, communication, and localization
+      as they are all necessary for a successful multi agent system. Below are some evaluations 
+      while the rest can be found in our paper.
+    </p>
   </div>  
-  
-  <!-- Thumbnail row -->
+
+  <!-- Thumbnail row (icons) -->
   <div class="row" 
-        style="
-          max-width: 1310px; 
-          margin: 0 auto; 
-          display: flex; 
-          justify-content: center; 
-          gap: 10px;
-        ">
-    <div class="column">
+       style="
+         max-width: 1310px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center; 
+         align-items: center;
+         gap: 30px;        /* Space between icon columns */
+         flex-wrap: wrap;  /* Allows icons to wrap on smaller screens */
+         text-align: center;
+         width: 100%;
+         margin-top: 40px; /* Optional top spacing */
+       ">
+    <!-- Synchronization Icon -->
+    <!-- <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
-           src="media/synchronization.png"
-           style="width: 320px; height: auto; cursor: pointer;"
+           src="media/synchronization_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(1)"
-           alt="Scenario: Synchronization. The controlled ego car...">
-    </div>
-    <div class="column">
+           alt="Synchronization Icon">
+    </div> -->
+
+    <!-- Calibration Icon -->
+    <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
-           src="media/calibration.png"
-           style="width: 320px; height: auto; cursor: pointer;"
+           src="media/calibration_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
+           onclick="currentSlide(1)"
+           alt="Calibration Icon">
+    </div>
+
+    <!-- Communication Icon -->
+    <div class="column" style="display: inline-block; text-align: center;">
+      <img class="demo cursor"
+           src="media/communication_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(2)"
-           alt="Scenario: Calibration. The controlled ego car...">
+           alt="Communication Icon">
     </div>
-    <div class="column">
+
+    <!-- Localization Icon -->
+    <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
-           src="media/communication.png"
-           style="width: 320px; height: auto; cursor: pointer;"
+           src="media/localization_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(3)"
-           alt="Scenario: Communication. The controlled ego car...">
-    </div>
-    <div class="column">
-      <img class="demo cursor"
-           src="media/localization.png"
-           style="width: 320px; height: auto; cursor: pointer;"
-           onclick="currentSlide(4)"
-           alt="Scenario: Localization. The controlled ego car...">
+           alt="Localization Icon">
     </div>
   </div>
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides" style="display: none; text-align: center;">
+  <!-- Full-width images with number text (same as before) -->
+  <!-- <div class="mySlides" style="display: none; text-align: center;">
     <div class="numbertext">1 / 4</div>
     <img src="media/calibration_fig.png" 
          style="width: 100%; max-width: 1310px; height: auto;" 
          alt="Calibration Figure">
-  </div>
+  </div> -->
   <div class="mySlides" style="display: none; text-align: center;">
-    <div class="numbertext">2 / 4</div>
+    <div class="numbertext">1 / 3</div>
     <img src="media/calibration_fig.png"
          style="width: 100%; max-width: 1310px; height: auto;" 
          alt="Calibration Figure">
   </div>
   <div class="mySlides" style="display: none; text-align: center;">
-    <div class="numbertext">3 / 4</div>
-    <img src="media/calibration_fig.png"
+    <div class="numbertext">2 / 3</div>
+    <img src="media/communication_fig.png"
          style="width: 100%; max-width: 1310px; height: auto;" 
          alt="Calibration Figure">
   </div>
   <div class="mySlides" style="display: none; text-align: center;">
-    <div class="numbertext">4 / 4</div>
-    <img src="media/calibration_fig.png"
+    <div class="numbertext">3 / 3</div>
+    <img src="media/localization_fig.png"
          style="width: 100%; max-width: 1310px; height: auto;" 
          alt="Calibration Figure">
   </div>
