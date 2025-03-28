@@ -8,7 +8,7 @@ categories: projects
 
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>NO-PUSH: Networked Open-source Portable Universal Sensing Hub</title>
+  <title>CMS: Enabling Real-world Cooperative Multi-modal Sensing</title>
 
 
 <!-- <meta property="og:image" content="images/teaser_fb.jpg"> -->
@@ -126,118 +126,158 @@ ul li:before {
 
 
 <p></p>
-<div width="1000"><p>
+<div width="1000" justify-content: center; style="max-width: 800px; width: 100%;"><p>
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 <!-- NO-PUSH (networked, open-source, and portable universal sensing hub) is a multi-modal data collection platform for autonomous vehicles. Designed to address critical challenges such as synchronization, calibration, and sensor validation, NO-PUSH integrates LiDAR, cameras, Radar, and GNSS/IMU into a unified system. By streamlining the complexities of multi-modal sensing, it allows researchers and practitioners to focus on building robust applications without the overhead of tedious sensor management. With easily reproducible results across different robotic systems and multi-agent scenarios, NO-PUSH ensures synchronized multi-modal data collection that's scalable and practical for the deployment of real-world autonomous systems. -->
 CMS, is a open-source, cooperative multi-modal sensing
 platform. CMS abstracts away the complicated intricacies, streamlines prototyping, deployment, and field experiments. Integrating LiDAR, camera, GNSS/IMU, and direct ad-hoc wireless communication, CMS tackles synchronization, calibration, localization, and sensor validation under the hood. Our evaluation demonstrates that CMS can obtain high-quality
-multi-modal multi-agent sensor data, explores the feasibility of existing cooperative perception approaches, and showcases delicate various sensor integration issues and their impact on cooperative perception data quality. CMS is open sources and can be used as the base platform for different multi-agent and robotic research. 
+multi-modal multi-agent sensor data, explores the feasibility of existing cooperative perception approaches, and showcases delicate various sensor integration issues and their impact on cooperative perception data quality. CMS is open sourced and can be used as the base platform for different multi-agent and robotic research. 
 </left></td></tr></tbody></table>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td align="center">
-<img src="./media/nopush_intro.png" alt="NOPUSH Intro">
-</td></tr>
+    <img src="./media/tower.jpeg" 
+         alt="NOPUSH Intro" 
+         style="width: 800px; height: auto; float: none; display: block; margin: 0 auto;">
+  </td></tr>
 </tbody>
 </table>
 
 <hr>
 <h1 align="center">CMS Overview</h1>
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
-<tbody>
-<tr><td><left>
-<!-- The prototype includes four different sensors connected to a power-over-ethernet (PoE) switch, which forwards the data to a central ROS node (running on a laptop). The laptop and sensors are synchronized with GNSS time, and all intrinsic and extrinsic parameters are calibrated for all sensors. TX/RX module communicates with other NO-PUSH platforms and the infrastructure. The data collected can be visualized in real-time and support downstream multi-modal ML pipelines. -->
-CMS integrates LiDAR, Camera, GNSS with a
-power-over-ethernet (PoE) switch, which forwards the data to a central ROS
-node (running on a laptop). The laptop and sensors are synchronized with
-GNSS time, and all intrinsic and extrinsic parameters are calibrated for all
-sensors. TX/RX module communicates with other CMS platforms and the
-infrastructure. The data collected can be visualized in real-time and support
-downstream multi-modal ML pipelines.
-</left>
-</td></tr>
-<tr><td>
-<!-- <video muted autoplay loop width="1000" controls> -->
-  <!-- <source src="./media/AutoCastOverview.mp4" type="video/mp4"> -->
-<img src="./media/arch4-1.png" alt="AutoCast Intro">
-<!-- </video> -->
-</td></tr>
-</tbody>
-</table>
-
-
-
-<tr>
-  <td align="center">
-  <h1 align="center">Evaluations</h1>
-    <p>
-      We evaluate CMS across these important areas for a multi-agent platform: Synchronization, Calibration, Communication, and Localization.
+<div style="display: flex; justify-content: center; width: 100%;">
+  <div style="max-width: 800px; width: 100%;">
+    <p style="text-align: left;">
+      CMS integrates LiDAR, Camera, GNSS with a power-over-ethernet (PoE) switch, which forwards the data to a central ROS node (running on a laptop). 
+      The laptop and sensors are synchronized with GNSS time, and all intrinsic and extrinsic parameters are calibrated for all sensors. 
+      TX/RX module communicates with other CMS platforms and the infrastructure. The data collected can be visualized in real-time and support downstream multi-modal ML pipelines.
+      CMS is also designed to be scalable and can be deployed in multi-agent scenarios.
     </p>
-  </td>
-</tr>
+    <div style="display: flex; justify-content: center;">
+      <img src="./media/arch4-1.png" alt="CMS Architecture" style="max-width: 100%; height: auto;">
+    </div>
+  </div>
+</div>
 
 
-<table border="0" cellspacing="10" cellpadding="0" align="center"> 
-<tbody><tr><td>
+
 <!-- Container for the image gallery -->
-<div class="container" align="center">
+<div class="container" style="margin: 0 auto; text-align: center;">
 
-  <!-- Thumbnail images -->
-  <div class="row" style="width:1020">
-    <div class="column">
-      <img class="demo cursor" src="media/synchronization.png" style="width:100%" onclick="currentSlide(1)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+  <!-- Title (centered) -->
+  <h1 align="center">Evaluations</h1>
+  <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+    <p>
+      We evaluate CMS across areas of synchronization, calibration, communication, and localization
+      as they are all necessary for a successful multi agent system. Below are some evaluations 
+      while the rest can be found in our paper.
+    </p>
+  </div>  
+
+  <!-- Thumbnail row (icons) -->
+  <div class="row" 
+       style="
+         max-width: 1310px;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center; 
+         align-items: center;
+         gap: 30px;        /* Space between icon columns */
+         flex-wrap: wrap;  /* Allows icons to wrap on smaller screens */
+         text-align: center;
+         width: 100%;
+         margin-top: 40px; /* Optional top spacing */
+       ">
+    <!-- Synchronization Icon -->
+    <!-- <div class="column" style="display: inline-block; text-align: center;">
+      <img class="demo cursor"
+           src="media/synchronization_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
+           onclick="currentSlide(1)"
+           alt="Synchronization Icon">
+    </div> -->
+
+    <!-- Calibration Icon -->
+    <div class="column" style="display: inline-block; text-align: center;">
+      <img class="demo cursor"
+           src="media/calibration_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
+           onclick="currentSlide(1)"
+           alt="Calibration Icon">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="media/calibration.png" style="width:100%" onclick="currentSlide(2)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+
+    <!-- Communication Icon -->
+    <div class="column" style="display: inline-block; text-align: center;">
+      <img class="demo cursor"
+           src="media/communication_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
+           onclick="currentSlide(2)"
+           alt="Communication Icon">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="media/communication.png" style="width:100%" onclick="currentSlide(3)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="media/localization.png" style="width:100%" onclick="currentSlide(4)" alt="Scenario 6: Overtaking. The controlled ego car will make a lane-change maneuver at the two-way yellow-dashed road when a truck is stuck in front of it. Our model avoids collisions by acting less aggressively and appropriately yielding to the opposite-going vehicles.">
+
+    <!-- Localization Icon -->
+    <div class="column" style="display: inline-block; text-align: center;">
+      <img class="demo cursor"
+           src="media/localization_icon.png"
+           style="width: 80px; height: auto; cursor: pointer;"
+           onclick="currentSlide(3)"
+           alt="Localization Icon">
     </div>
   </div>
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
+  <!-- Full-width images with number text (same as before) -->
+  <!-- <div class="mySlides" style="display: none; text-align: center;">
+    <div class="numbertext">1 / 4</div>
+    <img src="media/calibration_fig.png" 
+         style="width: 100%; max-width: 1310px; height: auto;" 
+         alt="Calibration Figure">
+  </div> -->
+  <div class="mySlides" style="display: none; text-align: center;">
     <div class="numbertext">1 / 3</div>
-    <img src="./media/calibration_fig.png" width="1020" alt="Calibration Figure">
+    <img src="media/calibration_fig.png"
+         style="width: 100%; max-width: 1310px; height: auto;" 
+         alt="Calibration Figure">
   </div>
-  <div class="mySlides">
+  <div class="mySlides" style="display: none; text-align: center;">
     <div class="numbertext">2 / 3</div>
-    <img src="./media/calibration_fig.png" width="1020" alt="Calibration Figure">
+    <img src="media/communication_fig.png"
+         style="width: 100%; max-width: 1310px; height: auto;" 
+         alt="Calibration Figure">
   </div>
-  <div class="mySlides">
+  <div class="mySlides" style="display: none; text-align: center;">
     <div class="numbertext">3 / 3</div>
-    <img src="./media/calibration_fig.png" width="1020" alt="Calibration Figure">
+    <img src="media/localization_fig.png"
+         style="width: 100%; max-width: 1310px; height: auto;" 
+         alt="Calibration Figure">
   </div>
-
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
   <!-- Image text -->
-  <div class="caption-container" style="width:1020">
-    <p id="caption"></p>
+  <div class="caption-container" style="max-width: 1310px; margin: 10px auto;">
+    <p id="caption" style="text-align: center;"></p>
   </div>
-
 </div>
-<script>showSlides(1)</script>
-</td></tr></tbody>
-</table>
 
+<script>
+  // Make sure your JS (showSlides, plusSlides, currentSlide, etc.) is defined here.
+  showSlides(1);
+</script>
 
 
 
 <tr>
-  <td align="center">
-  <h1 align="center">Demo of CMS</h1>
-    <p>
-      This video demonstrates the capabilities of CMS, it showcases synchronization, multi-agent communication and sensor fusion, enabling scalable deployment
-      in real-world autonomous systems.
-    </p>
+  <td>
+    <div style="max-width: 800px; margin: 0 auto; text-align: left;">
+      <h1 style="text-align: center;">Demo of CMS</h1>
+      <p>
+        This video demonstrates the capabilities of CMS. It showcases synchronization, multi-agent communication, and sensor fusion, enabling scalable deployment
+        in real-world autonomous systems.
+      </p>
+    </div>
   </td>
 </tr>
 <tr>
@@ -248,7 +288,6 @@ downstream multi-modal ML pipelines.
     </video>
   </td>
 </tr>
-
 
 
 <!--
