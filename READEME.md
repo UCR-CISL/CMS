@@ -125,8 +125,7 @@ ul li:before {
 
 
 
-<p></p>
-<div width="1000" justify-content: center; style="max-width: 800px; width: 100%;"><p>
+<div width="1000" justify-content: center; style="max-width: 800px; width: 100%;">
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 <!-- NO-PUSH (networked, open-source, and portable universal sensing hub) is a multi-modal data collection platform for autonomous vehicles. Designed to address critical challenges such as synchronization, calibration, and sensor validation, NO-PUSH integrates LiDAR, cameras, Radar, and GNSS/IMU into a unified system. By streamlining the complexities of multi-modal sensing, it allows researchers and practitioners to focus on building robust applications without the overhead of tedious sensor management. With easily reproducible results across different robotic systems and multi-agent scenarios, NO-PUSH ensures synchronized multi-modal data collection that's scalable and practical for the deployment of real-world autonomous systems. -->
@@ -134,6 +133,7 @@ CMS, is a open-source, cooperative multi-modal sensing
 platform. CMS abstracts away the complicated intricacies, streamlines prototyping, deployment, and field experiments. Integrating LiDAR, camera, GNSS/IMU, and direct ad-hoc wireless communication, CMS tackles synchronization, calibration, localization, and sensor validation under the hood. Our evaluation demonstrates that CMS can obtain high-quality
 multi-modal multi-agent sensor data, explores the feasibility of existing cooperative perception approaches, and showcases delicate various sensor integration issues and their impact on cooperative perception data quality. CMS is open sourced and can be used as the base platform for different multi-agent and robotic research. 
 </left></td></tr></tbody></table>
+</div>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td align="center">
@@ -189,40 +189,29 @@ multi-modal multi-agent sensor data, explores the feasibility of existing cooper
          width: 100%;
          margin-top: 40px; /* Optional top spacing */
        ">
-    <!-- Synchronization Icon -->
-    <!-- <div class="column" style="display: inline-block; text-align: center;">
-      <img class="demo cursor"
-           src="media/synchronization_icon.png"
-           style="width: 80px; height: auto; cursor: pointer;"
-           onclick="currentSlide(1)"
-           alt="Synchronization Icon">
-    </div> -->
-
     <!-- Calibration Icon -->
     <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
            src="media/calibration_icon.png"
            style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(1)"
-           alt="Calibration Icon">
+           alt="LiDAR to Camera overlays applied after various calibration methods on CMS collected data.">
     </div>
-
     <!-- Communication Icon -->
     <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
            src="media/communication_icon.png"
            style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(2)"
-           alt="Communication Icon">
+           alt="How much data that can be shared between CMS setups when opearting at 10hz ">
     </div>
-
     <!-- Localization Icon -->
     <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
            src="media/localization_icon.png"
            style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(3)"
-           alt="Localization Icon">
+           alt="Comparison of point cloud alignment collected from CMS before and after applying Iterative Closest Point (ICP) correction.">
     </div>
   </div>
 
