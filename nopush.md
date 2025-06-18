@@ -105,7 +105,7 @@ ul li:before {
 <center><h1><strong>CMS: Enabling Real-world Cooperative Multi-modal Sensing</strong></h1></center>
 
 <center><font size="-0.0"><h2> 
-    <a href="www.linkedin.com/in/bowu123/">Bo Wu</a>
+    <a href="https://www.linkedin.com/in/bowu123/">Bo Wu</a>
     &nbsp;&nbsp;&nbsp;
     <a href="https://www.linkedin.com/in/jerryli2025/">Jerry Li</a>
     &nbsp;&nbsp;&nbsp;
@@ -120,7 +120,7 @@ ul li:before {
         <a href="https://www.ucr.edu">University of California, Riverside</a>&nbsp;&nbsp;&nbsp; 
 </h2></font></center>
 <!-- <center><span style="font-size:20px;">Hotmobile 2025</span></center> -->
-<center><h2><a href="https://arxiv.org/abs/2112.14947">Paper</a> | <a href="https://github.com/UCR-CISL/NO-PUSH/tree/main">Code</a> | <a href="https://youtu.be/uBmdCRmZNIo">Demo</a> | <a href="#bibtex">Bibtex</a> </h2></center>
+<center><h2><a href="https://dl.acm.org/doi/abs/10.1145/3715014.3724372">Paper</a> | <a href="https://github.com/UCR-CISL/NO-PUSH/tree/main">Code</a> | <a href="https://youtu.be/OuoSL-a9OV8">Demo</a> | <a href="#bibtex">Bibtex</a> </h2></center>
 
 
 
@@ -319,3 +319,25 @@ style="border-width:0" /></a></noscript>
 <!-- End GoStats JavaScript Based Code -->
 <!-- </center></div></body></div> -->
 
+
+
+
+<hr>
+<h1 id="bibtex">Citation</h1>
+<div style="max-width: 800px; margin: 0 auto; text-align: left;">
+  <pre style="background: #f4f4f4; border: 1px solid #ddd; color: #666; padding: 10px; font-size: 15px;">
+@inbook{10.1145/3715014.3724372,
+author = {Wu, Bo and Li, Jerry and Mo, Ruoshen and Yue, Justin and Bharadia, Dinesh and Qiu, Hang},
+title = {Demo Abstract: Cooperative Multi-modal Sensing},
+year = {2025},
+isbn = {9798400714795},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3715014.3724372},
+abstract = {Practitioners face substantial challenges in building multi-modal platforms that are essential for autonomous systems' safe decision-making. Those complications, including synchronization, calibration, and tedious sensor validation, hinder user adoption for real-world applications. We present CMS, a Cooperative Multi-modal Sensing Platform. CMS provides one consistent interface, integrating LiDAR, camera, RaDAR, and GNSS/IMU, streamlines these processes and makes the intricacies transparent to users and applications. Our demonstration shows that CMS can obtain high-quality multi-modal sensor data, paving the way toward real-world prototypes of cooperative autonomous systems.},
+booktitle = {Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems},
+pages = {712–713},
+numpages = {2}
+}
+  </pre>
+</div>
