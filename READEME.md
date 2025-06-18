@@ -257,6 +257,26 @@ multi-modal multi-agent sensor data, explores the feasibility of existing cooper
 </script>
 
 
+<hr>
+<h1 id="bibtex">Citation</h1>
+<div style="max-width: 800px; margin: 0 auto; text-align: left;">
+  <pre style="background: #f4f4f4; border: 1px solid #ddd; color: #666; padding: 10px; font-size: 15px;">
+@inbook{10.1145/3715014.3724372,
+author = {Wu, Bo and Li, Jerry and Mo, Ruoshen and Yue, Justin and Bharadia, Dinesh and Qiu, Hang},
+title = {Demo Abstract: Cooperative Multi-modal Sensing},
+year = {2025},
+isbn = {9798400714795},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3715014.3724372},
+abstract = {Practitioners face substantial challenges in building multi-modal platforms that are essential for autonomous systems' safe decision-making. Those complications, including synchronization, calibration, and tedious sensor validation, hinder user adoption for real-world applications. We present CMS, a Cooperative Multi-modal Sensing Platform. CMS provides one consistent interface, integrating LiDAR, camera, RaDAR, and GNSS/IMU, streamlines these processes and makes the intricacies transparent to users and applications. Our demonstration shows that CMS can obtain high-quality multi-modal sensor data, paving the way toward real-world prototypes of cooperative autonomous systems.},
+booktitle = {Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems},
+pages = {712–713},
+numpages = {2}
+}
+  </pre>
+</div>
+
 
 <tr>
   <td>
@@ -295,25 +315,7 @@ We would like to thank
 <br><br>
 -->
 
-<hr>
-<h1 id="bibtex">Citation</h1>
-<div style="max-width: 800px; margin: 0 auto; text-align: left;">
-  <pre style="background: #f4f4f4; border: 1px solid #ddd; color: #666; padding: 10px; font-size: 15px;">
-@inbook{10.1145/3715014.3724372,
-author = {Wu, Bo and Li, Jerry and Mo, Ruoshen and Yue, Justin and Bharadia, Dinesh and Qiu, Hang},
-title = {Demo Abstract: Cooperative Multi-modal Sensing},
-year = {2025},
-isbn = {9798400714795},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3715014.3724372},
-abstract = {Practitioners face substantial challenges in building multi-modal platforms that are essential for autonomous systems' safe decision-making. Those complications, including synchronization, calibration, and tedious sensor validation, hinder user adoption for real-world applications. We present CMS, a Cooperative Multi-modal Sensing Platform. CMS provides one consistent interface, integrating LiDAR, camera, RaDAR, and GNSS/IMU, streamlines these processes and makes the intricacies transparent to users and applications. Our demonstration shows that CMS can obtain high-quality multi-modal sensor data, paving the way toward real-world prototypes of cooperative autonomous systems.},
-booktitle = {Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems},
-pages = {712–713},
-numpages = {2}
-}
-  </pre>
-</div>
+
 
 
 <div style="display:none">
