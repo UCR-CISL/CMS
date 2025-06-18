@@ -295,22 +295,6 @@ We would like to thank
 <br><br>
 -->
 
-<div style="display:none">
-<!-- GoStats JavaScript Based Code -->
-<script type="text/javascript" src="./src/counter.js"></script>
-<script type="text/javascript">_gos='c3.gostats.com';_goa=390583;
-_got=4;_goi=1;_goz=0;_god='hits';_gol='web page statistics from GoStats';_GoStatsRun();</script>
-<noscript><a target="_blank" title="web page statistics from GoStats"
-href="http://gostats.com"><img alt="web page statistics from GoStats"
-src="http://c3.gostats.com/bin/count/a_390583/t_4/i_1/z_0/show_hits/counter.png"
-style="border-width:0" /></a></noscript>
-</div>
-<!-- End GoStats JavaScript Based Code -->
-<!-- </center></div></body></div> -->
-
-
-
-
 <hr>
 <h1 id="bibtex">Citation</h1>
 <div style="max-width: 800px; margin: 0 auto; text-align: left;">
@@ -330,3 +314,21 @@ numpages = {2}
 }
   </pre>
 </div>
+
+
+<div style="display:none">
+<!-- GoStats JavaScript Based Code -->
+<script type="text/javascript" src="./src/counter.js"></script>
+<script type="text/javascript">_gos='c3.gostats.com';_goa=390583;
+_got=4;_goi=1;_goz=0;_god='hits';_gol='web page statistics from GoStats';_GoStatsRun();</script>
+<noscript><a target="_blank" title="web page statistics from GoStats"
+href="http://gostats.com"><img alt="web page statistics from GoStats"
+src="http://c3.gostats.com/bin/count/a_390583/t_4/i_1/z_0/show_hits/counter.png"
+style="border-width:0" /></a></noscript>
+</div>
+<!-- End GoStats JavaScript Based Code -->
+<!-- </center></div></body></div> -->
+
+
+
+
