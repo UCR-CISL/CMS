@@ -105,7 +105,7 @@ ul li:before {
 <center><h1><strong>CMS: Enabling Real-world Cooperative Multi-modal Sensing</strong></h1></center>
 
 <center><font size="-0.0"><h2> 
-    <a href="www.linkedin.com/in/bowu123/">Bo Wu</a>
+    <a href="https://www.linkedin.com/in/bowu123/">Bo Wu</a>
     &nbsp;&nbsp;&nbsp;
     <a href="https://www.linkedin.com/in/jerryli2025/">Jerry Li</a>
     &nbsp;&nbsp;&nbsp;
@@ -120,13 +120,12 @@ ul li:before {
         <a href="https://www.ucr.edu">University of California, Riverside</a>&nbsp;&nbsp;&nbsp; 
 </h2></font></center>
 <!-- <center><span style="font-size:20px;">Hotmobile 2025</span></center> -->
-<center><h2><a href="https://arxiv.org/abs/2112.14947">Paper</a> | <a href="https://github.com/UCR-CISL/NO-PUSH/tree/main">Code</a> | <a href="https://youtu.be/uBmdCRmZNIo">Demo</a> | <a href="#bibtex">Bibtex</a> </h2></center>
+<center><h2><a href="https://dl.acm.org/doi/abs/10.1145/3715014.3724372">Paper</a> | <a href="https://github.com/UCR-CISL/NO-PUSH/tree/main">Code</a> | <a href="https://youtu.be/OuoSL-a9OV8">Demo</a> | <a href="#bibtex">Bibtex</a> </h2></center>
 
 
 
 
-<p></p>
-<div width="1000" justify-content: center; style="max-width: 800px; width: 100%;"><p>
+<div width="1000" justify-content: center; style="max-width: 800px; width: 100%;">
 <table border="0" cellspacing="10" cellpadding="0" align="center"> 
 <tbody><tr><td><left>
 <!-- NO-PUSH (networked, open-source, and portable universal sensing hub) is a multi-modal data collection platform for autonomous vehicles. Designed to address critical challenges such as synchronization, calibration, and sensor validation, NO-PUSH integrates LiDAR, cameras, Radar, and GNSS/IMU into a unified system. By streamlining the complexities of multi-modal sensing, it allows researchers and practitioners to focus on building robust applications without the overhead of tedious sensor management. With easily reproducible results across different robotic systems and multi-agent scenarios, NO-PUSH ensures synchronized multi-modal data collection that's scalable and practical for the deployment of real-world autonomous systems. -->
@@ -134,6 +133,7 @@ CMS, is a open-source, cooperative multi-modal sensing
 platform. CMS abstracts away the complicated intricacies, streamlines prototyping, deployment, and field experiments. Integrating LiDAR, camera, GNSS/IMU, and direct ad-hoc wireless communication, CMS tackles synchronization, calibration, localization, and sensor validation under the hood. Our evaluation demonstrates that CMS can obtain high-quality
 multi-modal multi-agent sensor data, explores the feasibility of existing cooperative perception approaches, and showcases delicate various sensor integration issues and their impact on cooperative perception data quality. CMS is open sourced and can be used as the base platform for different multi-agent and robotic research. 
 </left></td></tr></tbody></table>
+</div>
 
 <table border="0" cellspacing="10" cellpadding="0" align="center">
   <tbody><tr><td align="center">
@@ -189,40 +189,29 @@ multi-modal multi-agent sensor data, explores the feasibility of existing cooper
          width: 100%;
          margin-top: 40px; /* Optional top spacing */
        ">
-    <!-- Synchronization Icon -->
-    <!-- <div class="column" style="display: inline-block; text-align: center;">
-      <img class="demo cursor"
-           src="media/synchronization_icon.png"
-           style="width: 80px; height: auto; cursor: pointer;"
-           onclick="currentSlide(1)"
-           alt="Synchronization Icon">
-    </div> -->
-
     <!-- Calibration Icon -->
     <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
            src="media/calibration_icon.png"
            style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(1)"
-           alt="Calibration Icon">
+           alt="LiDAR to Camera overlays applied after various calibration methods on CMS collected data.">
     </div>
-
     <!-- Communication Icon -->
     <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
            src="media/communication_icon.png"
            style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(2)"
-           alt="Communication Icon">
+           alt="How much data that can be shared between CMS setups when opearting at 10hz ">
     </div>
-
     <!-- Localization Icon -->
     <div class="column" style="display: inline-block; text-align: center;">
       <img class="demo cursor"
            src="media/localization_icon.png"
            style="width: 80px; height: auto; cursor: pointer;"
            onclick="currentSlide(3)"
-           alt="Localization Icon">
+           alt="Comparison of point cloud alignment collected from CMS before and after applying Iterative Closest Point (ICP) correction.">
     </div>
   </div>
 
@@ -319,3 +308,25 @@ style="border-width:0" /></a></noscript>
 <!-- End GoStats JavaScript Based Code -->
 <!-- </center></div></body></div> -->
 
+
+
+
+<hr>
+<h1 id="bibtex">Citation</h1>
+<div style="max-width: 800px; margin: 0 auto; text-align: left;">
+  <pre style="background: #f4f4f4; border: 1px solid #ddd; color: #666; padding: 10px; font-size: 15px;">
+@inbook{10.1145/3715014.3724372,
+author = {Wu, Bo and Li, Jerry and Mo, Ruoshen and Yue, Justin and Bharadia, Dinesh and Qiu, Hang},
+title = {Demo Abstract: Cooperative Multi-modal Sensing},
+year = {2025},
+isbn = {9798400714795},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3715014.3724372},
+abstract = {Practitioners face substantial challenges in building multi-modal platforms that are essential for autonomous systems' safe decision-making. Those complications, including synchronization, calibration, and tedious sensor validation, hinder user adoption for real-world applications. We present CMS, a Cooperative Multi-modal Sensing Platform. CMS provides one consistent interface, integrating LiDAR, camera, RaDAR, and GNSS/IMU, streamlines these processes and makes the intricacies transparent to users and applications. Our demonstration shows that CMS can obtain high-quality multi-modal sensor data, paving the way toward real-world prototypes of cooperative autonomous systems.},
+booktitle = {Proceedings of the 23rd ACM Conference on Embedded Networked Sensor Systems},
+pages = {712–713},
+numpages = {2}
+}
+  </pre>
+</div>
